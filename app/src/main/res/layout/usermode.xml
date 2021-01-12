@@ -1,0 +1,1831 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Light 1"
+            android:padding="8dp"
+            android:textSize="21dp"
+            android:background="#19395E"
+            android:textColor="#fff"
+            android:elevation="5dp"/>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="11"
+            >
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:layout_gravity="center"
+                android:text="Time On"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:layout_gravity="center"
+                android:text="Time Off"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:layout_gravity="center"
+                android:text="Brightness"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="11"
+        >
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="MON:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/spnMonTimeOn4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnMonTimeOff4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnMonValue4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="11"
+            >
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="TUE:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/spnTueTimeOn4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnTueTimeOff4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnTueValue4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="11"
+            >
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="WED:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/spnWedTimeOn4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnWedTimeOff4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnWedValue4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="11"
+            >
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="THU:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/spnThuTimeOn4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnThuTimeOff4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnThuValue4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="11"
+            >
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="FRI:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/spnFriTimeOn4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnFriTimeOff4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnFriValue4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="11"
+            >
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="SAT:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/spnSatTimeOn4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnSatTimeOff4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnSatValue4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="11"
+            >
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="SUN:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/spnSunTimeOn4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnSunTimeOff4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnSunValue4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            >
+            <Button
+                android:id="@+id/btnReset4"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#132b46"
+                android:text="RESET"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+            <Button
+                android:id="@+id/btnSetup4"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#132b46"
+                android:text="SETUP"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+            <Button
+                android:id="@+id/btnAuto4"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#132b46"
+                android:text="AUTO: OFF"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Light 2"
+            android:padding="8dp"
+            android:textSize="21dp"
+            android:background="#19395E"
+            android:textColor="#fff"
+            android:elevation="5dp"/>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="11"
+            >
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:layout_gravity="center"
+                android:text="Time On"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:layout_gravity="center"
+                android:text="Time Off"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:layout_gravity="center"
+                android:text="Brightness"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="11"
+            >
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="MON:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/spnMonTimeOn5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnMonTimeOff5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnMonValue5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="11"
+            >
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="TUE:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/spnTueTimeOn5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnTueTimeOff5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnTueValue5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="11"
+            >
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="WED:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/spnWedTimeOn5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnWedTimeOff5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnWedValue5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="11"
+            >
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="THU:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/spnThuTimeOn5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnThuTimeOff5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnThuValue5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="11"
+            >
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="FRI:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/spnFriTimeOn5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnFriTimeOff5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnFriValue5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="11"
+            >
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="SAT:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/spnSatTimeOn5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnSatTimeOff5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnSatValue5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="11"
+            >
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="SUN:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/spnSunTimeOn5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnSunTimeOff5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnSunValue5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            >
+            <Button
+                android:id="@+id/btnReset5"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#132b46"
+                android:text="RESET"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+            <Button
+                android:id="@+id/btnSetup5"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#132b46"
+                android:text="SETUP"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+            <Button
+                android:id="@+id/btnAuto5"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#132b46"
+                android:text="AUTO: OFF"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Air Conditioner"
+            android:padding="8dp"
+            android:textSize="21dp"
+            android:background="#19395E"
+            android:textColor="#fff"
+            android:elevation="5dp"/>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="11"
+            >
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:layout_gravity="center"
+                android:text="Time On"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:layout_gravity="center"
+                android:text="Time Off"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:layout_gravity="center"
+                android:text="Temperature"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="11"
+            >
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="MON:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/spnMonTimeOn1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnMonTimeOff1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnMonValue1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="11"
+            >
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="TUE:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/spnTueTimeOn1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnTueTimeOff1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnTueValue1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="11"
+            >
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="WED:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/spnWedTimeOn1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnWedTimeOff1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnWedValue1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="11"
+            >
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="THU:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/spnThuTimeOn1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnThuTimeOff1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnThuValue1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="11"
+            >
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="FRI:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/spnFriTimeOn1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnFriTimeOff1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnFriValue1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="11"
+            >
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="SAT:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/spnSatTimeOn1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnSatTimeOff1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnSatValue1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="11"
+            >
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="SUN:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/spnSunTimeOn1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnSunTimeOff1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnSunValue1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            >
+            <Button
+                android:id="@+id/btnReset1"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#132b46"
+                android:text="RESET"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+            <Button
+                android:id="@+id/btnSetup1"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#132b46"
+                android:text="SETUP"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+            <Button
+                android:id="@+id/btnAuto1"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#132b46"
+                android:text="AUTO: OFF"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Projector"
+            android:padding="8dp"
+            android:textSize="21dp"
+            android:background="#19395E"
+            android:textColor="#fff"
+            android:elevation="5dp"/>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="11"
+            >
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:layout_gravity="center"
+                android:text="Time On"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:layout_gravity="center"
+                android:text="Time Off"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="11"
+            >
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="MON:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/spnMonTimeOn3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnMonTimeOff3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="11"
+            >
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="TUE:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/spnTueTimeOn3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnTueTimeOff3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="11"
+            >
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="WED:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                />
+            <Spinner
+                android:id="@+id/spnWedTimeOn3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+            <Spinner
+                android:id="@+id/spnWedTimeOff3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="11"
+            >
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="THU:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/spnThuTimeOn3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnThuTimeOff3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="11"
+            >
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="FRI:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/spnFriTimeOn3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnFriTimeOff3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="11"
+            >
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="SAT:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/spnSatTimeOn3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnSatTimeOff3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="11"
+            >
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="SUN:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/spnSunTimeOn3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnSunTimeOff3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            >
+            <Button
+                android:id="@+id/btnReset3"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#132b46"
+                android:text="RESET"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+            <Button
+                android:id="@+id/btnSetup3"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#132b46"
+                android:text="SETUP"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+            <Button
+                android:id="@+id/btnAuto3"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#132b46"
+                android:text="AUTO: OFF"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TV"
+            android:padding="8dp"
+            android:textSize="21dp"
+            android:background="#19395E"
+            android:textColor="#fff"
+            android:elevation="5dp"/>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="11"
+            >
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:layout_gravity="center"
+                android:text="Time On"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:layout_gravity="center"
+                android:text="Time Off"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:layout_gravity="center"
+                android:text="Channel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="11"
+            >
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="MON:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/spnMonTimeOn2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnMonTimeOff2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnMonValue2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="11"
+            >
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="TUE:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/spnTueTimeOn2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnTueTimeOff2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnTueValue2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="11"
+            >
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="WED:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/spnWedTimeOn2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnWedTimeOff2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnWedValue2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="11"
+            >
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="THU:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/spnThuTimeOn2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnThuTimeOff2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnThuValue2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="11"
+            >
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="FRI:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/spnFriTimeOn2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnFriTimeOff2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnFriValue2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="11"
+            >
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="SAT:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/spnSatTimeOn2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnSatTimeOff2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnSatValue2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="11"
+            >
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="SUN:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/spnSunTimeOn2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnSunTimeOff2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+
+            <Spinner
+                android:id="@+id/spnSunValue2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            >
+            <Button
+                android:id="@+id/btnReset2"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#132b46"
+                android:text="RESET"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+            <Button
+                android:id="@+id/btnSetup2"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#132b46"
+                android:text="SETUP"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+            <Button
+                android:id="@+id/btnAuto2"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#132b46"
+                android:text="AUTO: OFF"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>
